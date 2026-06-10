@@ -1,0 +1,19 @@
+--Weather Observation Station 7
+/*
+Enter your query here.
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY LIKE '%A'
+OR LIKE '%E'
+OR LIKE '%I'
+OR LIKE '%O'
+OR LIKE '%U';
+
+
+*/
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '[AEIOU]$';
+
+
